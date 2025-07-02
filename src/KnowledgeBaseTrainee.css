@@ -1,0 +1,236 @@
+.trainee-half-left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  background: #f7f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.trainee-half-right {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  background: #f7f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  overflow: hidden;
+  box-shadow: -2px 0 16px rgba(0,0,0,0.04);
+}
+
+.trainee-container {
+  width: 98%;
+  height: 96vh;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.trainee-container-with-padding {
+  padding-top: 56px;
+}
+
+.trainee-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  min-width: 0;
+}
+.trainee-panel-left {
+  width: 28%;
+  min-width: 140px;
+  border-right: 1px solid #f0f0f0;
+  padding: 24px 12px 24px 24px;
+}
+.trainee-panel-center {
+  width: 44%;
+  border-right: 1px solid #f0f0f0;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trainee-panel-right {
+  width: 28%;
+  min-width: 140px;
+  padding: 24px 18px 24px 12px;
+}
+
+.trainee-search-box {
+  margin-bottom: 18px;
+}
+.trainee-search-box input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e0e3ea;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background: #f9f9fb;
+}
+
+.trainee-search-hint {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 6px;
+  margin-top: 2px;
+  border: 2px solid red;
+  border-radius: 8px;
+  padding: 4px 12px;
+  background: #fff;
+  display: inline-block;
+}
+
+.trainee-list {
+  flex: 1;
+  overflow-y: auto;
+  min-width: 0;
+}
+.trainee-list-item {
+  display: flex;
+  align-items: center;
+  background: #f6f8fa;
+  border-radius: 8px;
+  padding: 10px 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.trainee-list-item.selected, .trainee-list-item:hover {
+  background: #e6f0ff;
+}
+.trainee-pdf {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-right: 8px;
+  font-size: 15px;
+}
+.trainee-title {
+  flex: 1;
+  font-size: 15px;
+  color: #222;
+}
+.trainee-date {
+  font-size: 12px;
+  color: #aaa;
+  margin-left: 8px;
+}
+
+.trainee-qa-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.trainee-qa-icon {
+  font-size: 22px;
+  margin-right: 8px;
+}
+.trainee-qa-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.trainee-qa-content {
+  width: 100%;
+  background: #f7f8fa;
+  border-radius: 12px;
+  padding: 18px 16px;
+  min-height: 180px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+
+.trainee-func-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.trainee-func-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 8px;
+  margin-bottom: 18px;
+}
+.trainee-func-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #f2f4f8;
+  color: #222;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.trainee-func-btn.blue {
+  background: #2563eb;
+  color: #fff;
+}
+.trainee-func-btn.green {
+  background: #22c55e;
+  color: #fff;
+}
+.trainee-func-btn:hover {
+  background: #e0e7ef;
+}
+.trainee-func-list {
+  margin-top: 18px;
+}
+.trainee-func-list-btn {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: #e0e7ef;
+  color: #2563eb;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.trainee-func-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.trainee-func-tags span {
+  background: #f2f4f8;
+  color: #666;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+.trainee-back-btn {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #e0e3ea;
+  border-radius: 8px;
+  padding: 6px 18px;
+  font-size: 15px;
+  color: #2563eb;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: background 0.2s, border 0.2s;
+}
+.trainee-back-btn:hover {
+  background: #f0f6ff;
+  border: 1px solid #2563eb;
+} 
