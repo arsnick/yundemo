@@ -127,6 +127,7 @@
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 32px;
 }
 
 .kb-item-vertical {
@@ -215,10 +216,8 @@
   word-break: break-all;
 }
 .kb-top-hint-box {
-  margin-top: 24px;
   margin-bottom: 24px;
 }
 .kb-bottom-hint-box {
-  margin-top: 32px;
-  margin-bottom: 24px;
+  margin-top: 0;
 } 
