@@ -35,11 +35,11 @@ export default function KnowledgeBaseLeftDemo() {
   return (
     <div className="kb-half-left">
       <div className="demo-label-left">demo1（现状）</div>
-      <div className="kb-top-hint-box">
-        首页搜索框为全局搜索框，进入特定知识库页面中有该知识库的的搜索框。用户难以感知二者差别。
-      </div>
       <div className="kb-page-center">
         <div className="kb-main-content">
+          <div className="kb-top-hint-box">
+            首页搜索框为全局搜索框，进入特定知识库页面中有该知识库的的搜索框。用户难以感知二者差别。
+          </div>
           <div className="kb-search-bar" style={{position: 'relative'}}>
             <input
               type="text"
