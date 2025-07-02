@@ -2,39 +2,51 @@ import React, { useState } from 'react';
 import './KnowledgeBaseRightDemo.css';
 
 const knowledgeBases = [
-  {
-    key: 'trainee',
-    name: '管培生知识库',
-    desc: '面向管培生的专属知识库',
-    icon: '📚',
-    list: [
-      { title: '管培生技术学习路径', date: '2025-07-01', type: 'PDF' },
-      { title: '管培生文化学习路径', date: '2025-07-01', type: 'PDF' },
-      { title: '管培生管理学习路径', date: '2025-07-01', type: 'PDF' },
-    ],
-  },
-  {
-    key: 'qingyun',
-    name: '青云营知识库',
-    desc: '青云营相关知识内容',
-    icon: '🌱',
-    list: [
-      { title: '青云营技术成长路径', date: '2025-07-01', type: 'PDF' },
-      { title: '青云营文化活动', date: '2025-07-01', type: 'PDF' },
-      { title: '青云营管理实践', date: '2025-07-01', type: 'PDF' },
-    ],
-  },
-  {
-    key: 'professional',
-    name: '专业知识库',
-    desc: '专业领域知识库',
-    icon: '💡',
-    list: [
-      { title: '专业技术成长路径', date: '2025-07-01', type: 'PDF' },
-      { title: '专业领域研究', date: '2025-07-01', type: 'PDF' },
-      { title: '专业管理实践', date: '2025-07-01', type: 'PDF' },
-    ],
-  },
+  { key: 'yunqi', name: '云启知识库', desc: '云启相关知识内容', icon: '☁️', list: [
+    { title: '云启平台入门指南', date: '2025-07-01', type: 'PDF' },
+    { title: '云启架构设计', date: '2025-07-01', type: 'PDF' },
+    { title: '云启最佳实践', date: '2025-07-01', type: 'PDF' },
+  ] },
+  { key: 'trainee', name: '管培生知识库', desc: '面向管培生的专属知识库', icon: '📚', list: [
+    { title: '管培生技术学习路径', date: '2025-07-01', type: 'PDF' },
+    { title: '管培生文化学习路径', date: '2025-07-01', type: 'PDF' },
+    { title: '管培生管理学习路径', date: '2025-07-01', type: 'PDF' },
+  ] },
+  { key: 'techcampus', name: '技术校招知识库', desc: '技术校招相关知识内容', icon: '🎓', list: [
+    { title: '校招流程全解', date: '2025-07-01', type: 'PDF' },
+    { title: '技术面试题库', date: '2025-07-01', type: 'PDF' },
+    { title: '校招经验分享', date: '2025-07-01', type: 'PDF' },
+  ] },
+  { key: 'idc', name: 'IDC知识库', desc: 'IDC相关知识内容', icon: '🏢', list: [
+    { title: 'IDC基础知识', date: '2025-07-01', type: 'PDF' },
+    { title: 'IDC运维手册', date: '2025-07-01', type: 'PDF' },
+    { title: 'IDC安全规范', date: '2025-07-01', type: 'PDF' },
+  ] },
+  { key: 'highp', name: '高P landing知识库', desc: '高P landing相关知识内容', icon: '🚀', list: [
+    { title: '高P landing项目介绍', date: '2025-07-01', type: 'PDF' },
+    { title: '高P landing技术方案', date: '2025-07-01', type: 'PDF' },
+    { title: '高P landing案例分析', date: '2025-07-01', type: 'PDF' },
+  ] },
+  { key: 'feiyun', name: '飞云团知识库', desc: '飞云团相关知识内容', icon: '🪁', list: [
+    { title: '飞云团项目介绍', date: '2025-07-01', type: 'PDF' },
+    { title: '飞云团技术分享', date: '2025-07-01', type: 'PDF' },
+    { title: '飞云团管理制度', date: '2025-07-01', type: 'PDF' },
+  ] },
+  { key: 'qingyun', name: '青云营知识库', desc: '青云营相关知识内容', icon: '🌱', list: [
+    { title: '青云营技术成长路径', date: '2025-07-01', type: 'PDF' },
+    { title: '青云营文化活动', date: '2025-07-01', type: 'PDF' },
+    { title: '青云营管理实践', date: '2025-07-01', type: 'PDF' },
+  ] },
+  { key: 'manager', name: '管理者专班知识库', desc: '管理者专班相关知识内容', icon: '👔', list: [
+    { title: '管理者专班课程体系', date: '2025-07-01', type: 'PDF' },
+    { title: '管理者领导力提升', date: '2025-07-01', type: 'PDF' },
+    { title: '管理者案例分析', date: '2025-07-01', type: 'PDF' },
+  ] },
+  { key: 'protrain', name: '专业培训知识库', desc: '专业培训相关知识内容', icon: '🏫', list: [
+    { title: '专业技术成长路径', date: '2025-07-01', type: 'PDF' },
+    { title: '专业领域研究', date: '2025-07-01', type: 'PDF' },
+    { title: '专业管理实践', date: '2025-07-01', type: 'PDF' },
+  ] },
 ];
 
 export default function KnowledgeBaseRightDemo() {
@@ -57,7 +69,13 @@ export default function KnowledgeBaseRightDemo() {
               onChange={e => setSearch(e.target.value)}
             />
           </div>
-          <div style={{display: 'flex', gap: 8, margin: '8px 0'}}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gridTemplateRows: 'repeat(3, 1fr)',
+            gap: 8,
+            margin: '8px 0',
+          }}>
             {knowledgeBases.map((kb, idx) => (
               <button
                 key={kb.key}
@@ -69,6 +87,10 @@ export default function KnowledgeBaseRightDemo() {
                   padding: '4px 12px',
                   fontWeight: selectedKB.key === kb.key ? 'bold' : 'normal',
                   cursor: 'pointer',
+                  width: '100%',
+                  minWidth: 0,
+                  minHeight: 0,
+                  boxSizing: 'border-box',
                 }}
                 onClick={() => {
                   setSelectedKB(kb);
