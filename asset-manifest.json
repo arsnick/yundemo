@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yundemo/static/css/main.8774439a.css",
+    "main.js": "/yundemo/static/js/main.421976dc.js",
+    "static/js/453.96453769.chunk.js": "/yundemo/static/js/453.96453769.chunk.js",
+    "index.html": "/yundemo/index.html",
+    "main.8774439a.css.map": "/yundemo/static/css/main.8774439a.css.map",
+    "main.421976dc.js.map": "/yundemo/static/js/main.421976dc.js.map",
+    "453.96453769.chunk.js.map": "/yundemo/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8774439a.css",
+    "static/js/main.421976dc.js"
+  ]
+}
