@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/yundemo/static/css/main.2bf1fa5b.css",
-    "main.js": "/yundemo/static/js/main.d182fef1.js",
+    "main.css": "/yundemo/static/css/main.701b04ee.css",
+    "main.js": "/yundemo/static/js/main.60abd953.js",
     "static/js/453.96453769.chunk.js": "/yundemo/static/js/453.96453769.chunk.js",
     "index.html": "/yundemo/index.html",
-    "main.2bf1fa5b.css.map": "/yundemo/static/css/main.2bf1fa5b.css.map",
-    "main.d182fef1.js.map": "/yundemo/static/js/main.d182fef1.js.map",
+    "main.701b04ee.css.map": "/yundemo/static/css/main.701b04ee.css.map",
+    "main.60abd953.js.map": "/yundemo/static/js/main.60abd953.js.map",
     "453.96453769.chunk.js.map": "/yundemo/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bf1fa5b.css",
-    "static/js/main.d182fef1.js"
+    "static/css/main.701b04ee.css",
+    "static/js/main.60abd953.js"
   ]
 }
